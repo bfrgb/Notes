@@ -1,0 +1,87 @@
+{
+
+  /**
+    tsconfig.json 是ts编译器的配置文件，ts编译器可以根据它的信息来对代码进行编译
+
+    路径：** 表示任意目录
+          * 表示任意文件
+  */
+
+  // include 用来指定哪些ts文件要被编译
+  "include": [
+    "./src/**/*"
+  ],
+
+  // exclude 不需要编译的文件目录
+  "exclude": [
+    "./src/hello/**/*"
+  ],
+
+  // compilerOptions 编译器的选项
+  "compilerOptions": {
+    // target 用来指定ts被编译的ES版本
+    "target": "ES3",
+
+    // module 指定要使用的模块化的规范
+    "module": "amd",
+
+    // lib 用来指定项目中要使用的库
+    "lib": ["es6", "dom"],
+
+    // outDir 用来指定变异后文件所在的目录
+    "outDir": "./dist",
+
+    // 将代码合并为一个文件
+    // 设置outFile后，所有的全局作用域中的代码会合并到同一个文件中
+    "outFile": "./dist/app.js",
+
+    // 是否对js文件进行编译， 默认是false
+    "allowJs": false,
+
+    // 是否检查js代码是否符合语法规范，默认是 false
+    "checkJs": false,
+
+    // 是否移除注释
+    "removeComments": false,
+
+    // 不生产编译后的文件
+    "noEmit": false,
+
+    // 当有错误时不生成编译文件
+    "noEmitOnError": false,
+
+    // 所有严格检查的总开关
+    "strict": false,
+
+    // 用来设置编译后的文件是否使用严格模式， 默认 false
+    "alwaysStrict": false,
+
+    // 不允许隐式的any类型
+    "noImplicitAny": false,
+
+    // 不允许不明确类型的this
+    "noImplicitThis": false,
+
+    // 严格的检查空值
+    "strictNullChecks": false,
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
