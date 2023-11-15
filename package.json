@@ -1,0 +1,18 @@
+//因为ts不可能脱离打包工具来进行运行，因此我们需要掌握的就是如何在webpack中打包ts代码。
+
+//首先创建一个文件夹，并对该文件夹进行初始化，npm init -y，目的是生成一个package.json文件
+
+// npm init -y
+
+// 接着我们需要安装wedpack所需要的依赖
+
+// 安装的ts 及 ts-loader就是为了webpack能与ts进行整合
+
+// npm i -D webpack webpack-cli typescript ts-loader
+
+// 此时就安装好了
+
+"devDependencies": {
+  "ts-loader": "^9.4.2",
+
+}
